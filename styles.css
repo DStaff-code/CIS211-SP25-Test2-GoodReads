@@ -34,6 +34,13 @@ body {
     font-weight: 400;
 }
 
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+
+    /* outline: 1px solid rebeccapurple; */
+}
+
 header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -126,18 +133,205 @@ ul {
     font-weight: 520;
 }
 
+/* Book Stuff */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+
 /* Sidebar */
 
+.sidebar {
+    min-width: 300px;
+    padding-top: 100px;
+    margin: 13px 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1.5rem;
+}
 
-/* Body */
+#book-cover {
+    height: auto;
+    width: 100%;
+    max-width: 210px;
+    border-radius: 0 6% 6% 0 / 4%;
+}
 
+.book-btn {
+    margin: 16px auto 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.btn-want-to-read {
+    width: 100%;
+    background-color: var(--color-btn-wtr-base);
+    border-width: 2px;
+    border-radius: 3rem;
+    padding: 12px 100px;
+    font-weight: 550;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-want-to-read span {
+    color: white;
+}
+
+.btn-want-to-read:hover {
+    background-color: var(--color-btn-wtr-hover);
+}
+
+.btn-kindle {
+    border-color: var(--color-btn-wtr-base);
+    border-style: solid;
+    width: 100%;
+    border-width: 2px;
+    border-radius: 3rem;
+    padding: 12px 100px;
+    font-weight: 550;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-kindle:hover {
+    background-color: #cec9c9;
+}
+
+/* .bk-cover-rating {
+
+} */
+
+/* Info Content */
+
+.main-content {
+    padding-top: 100px;
+}
+
+.book-details {
+    font-family: Libre Baskerville, Georgia, serif;
+}
+
+.book-title {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.3rem;
+    font-weight: 100;
+}
+
+.book-title h3 {
+    line-height: 3rem;
+    font-weight: 800;
+}
+
+.book-title a {
+    margin-left: auto;
+}
+
+.author-details {
+    font-size: 1.5rem;
+    font-weight: 0;
+}
+
+.author-details img {
+    font-size: 1.7rem;
+    height: 20px;
+}
+
+.author-details:hover {
+    text-decoration: underline;
+}
+
+.ratings-stats-bar {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.choice-awards-badge {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: .9rem;
+    align-items: center;
+    font-weight: 300;
+}
+
+.choice-awards-flag {
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: .9rem;
+    font-weight: 400;
+    background-color: #F0BF6E;
+}
+
+.book-description {
+    padding-right: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: .9rem;
+    font-family: Montserrat, Arial, sans-serif;
+}
+
+.book-description b{
+    font-weight: 600;
+}
+
+.genres {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.genres p{
+    font-size: .9rem;
+    color: #707070;
+}
+
+.genre-button {
+    gap: 1rem;
+    /* outline: 5px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.genre-button a {
+    text-decoration: underline;
+    text-decoration-color: darkgreen;
+    text-decoration-thickness: 2px;
+}
+
+.genre-button a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--color-btn-wtr-hover);
+    text-decoration-thickness: 2px;
+}
+
+.extra-book-details {
+    padding-top: 20px;
+    gap: 1rem;
+    font-size: .9rem;
+    line-height: 2rem;
+    color: #4f4f4d;
+}
 
 /* Help Card */
 .help-card {
-    border-radius: 8px;
+    border-radius: 15px;
+    padding: 24px;
     background-color: var(--color-bg-card);
     margin-bottom: 32px;
-    padding: 24px;
     text-align: center;
 }
 
@@ -164,6 +358,10 @@ ul {
     font-weight: 550;
     align-items: center;
     justify-content: center;
+}
+
+.help-card-button:hover {
+    background-color: #cec9c9;
 }
 
 /* Footer */

@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Test 2 - GoodReads</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
   </head>
   <body>
     <header>
@@ -33,91 +43,104 @@
         </nav>
       </div>
     </header>
-  
-    <section class="sidebar">
-        <img src="" alt="Fairy Tale by Stephen King" id="book-cover">
-        <div class="btn">
-            <div class="btn-want-to-read">
-                <a href="#">Want to read</a>
-            </div>
-            <div class="btn-kindle">
-                <a href="#">Kindle $9.99</a>
-            </div>
-        </div>
-    </section>
-    <section class="main-content">
-        <div class="book-details">
-            <div class="book-title">
-                <h3>Fairy Tale</h3> 
-                <a href="">share SVG</a> 
-            </div>
-            <a href="#">Stephen King</a>         
-        </div>
-        <div class="ratings-stats-bar">
-            <a href="" class="rating">
-                <div class="rating-stats-column">
-                    rating image?
+    <main class="wrapper">
+        <section class="flex-container">
+            <div class="sidebar">
+                <img src="/images/fairytale-book-cover.jpg" alt="Fairy Tale by Stephen King" id="book-cover">
+                <div class="book-btn">
+                    <div>
+                        <a href="#" class="btn-want-to-read"><span>Want to read</span></a>
+                    </div>
+                    <div>
+                        <a href="#" class="btn-kindle">Kindle $9.99</a>
+                    </div>
+                    <div>
+                        <img src="" alt="Stars go header">
+                        <p>
+                            Rate this book
+                        </p>
+                    </div>
                 </div>
-                <div class="rating-stats-column">
-                    <span id="rating-count">
-                        306,837 ratings
-                    </span>
-                    <span id="dot">
-                        ·
-                    </span>
-                    <span id="review-count">
-                        34,811 reviews
-                    </span>
-                </div>
-            </a>
-        </div>
-        <div class="choice-awards-badge">
-            <div class="choice-awards-flag">
-                <span>Goodreads Choice Award</span>
             </div>
-            <span>
-                <a href="">
-                    <u>Nominee for Readers' Favorite Fantasy (2022)</u>
-                </a>
-            </span>
-            
-        </div>
-        <div class="book-description">
-            <p><b>Legendary storyteller Stephen King goes deep into the well of his imagination in this spellbinding novel about a seventeen-year-old boy who inherits the keys to a parallel world where good and evil are at war, and the stakes could not be higher—for their world or ours.</b></p>
-            <p>Charlie Reade looks like a regular high school kid, great at baseball and football, a decent student. But he carries a heavy load. His mom was killed in a hit-and-run accident when he was ten, and grief drove his dad to drink. Charlie learned how to take care of himself—and his dad. Then, when Charlie is seventeen, he meets Howard Bowditch, a recluse with a big dog in a big house at the top of a big hill. In the backyard is a locked shed from which strange sounds emerge, as if some creature is trying to escape. When Mr. Bowditch dies, he leaves Charlie the house, a massive amount of gold, a cassette tape telling a story that is impossible to believe, and a responsibility far too massive for a boy to shoulder.</p>
-            <p>Because within the shed is a portal to another world—one whose denizens are in peril and whose monstrous leaders may destroy their own world, and ours. In this parallel universe, where two moons race across the sky, and the grand towers of a sprawling palace pierce the clouds, there are exiled princesses and princes who suffer horrific punishments; there are dungeons; there are games in which men and women must fight each other to the death for the amusement of the “Fair One.” And there is a magic sundial that can turn back time.</p>
-            <p>A story as old as myth, and as startling and iconic as the rest of Kings work, Fairy Tale is about an ordinary guy forced into the heros role by circumstance, and it is both spectacularly suspenseful and satisfying.</p>
-        
-        </div>
-        <div class="genres">
-            <p>Genres</p>
-            <a href="#">Horror</a>
-            <a href="#">Thriller</a>
-            <a href="#">Adventure</a>
-            <a href="#">Adult</a>
-            <a href="#">Science Fiction</a>
-            <a href="#">Magic</a>
-            <a href="#">Mystery</a>
-            <a href="#">Science Fiction Fantasy</a>
-        </div>
-        <div class="extra-book-details">
-            <p>607 pages, Hardcover</p>
-            <p>First published September 6, 2022</p>
-        </div>
-    </section>
+            <div class="main-content">
+                <div class="book-details">
+                    <div class="book-title">
+                        <h3>Fairy Tale</h3> 
+                        <a href=""><img src="/images/share.svg" alt="Share"></a> 
+                    </div>
+                    <div class="author-details">
+                        <a href="#">Stephen King <img src="images/g-logo.svg" alt="Special Logo"></a>
+                    </div>
+                             
+                </div>
+                <div class="ratings-stats-bar">
+                    <a href="" class="rating">
+                        <div class="rating-stats-column">
+                            <img src="" alt="rating count image">
+                        </div>
+                        <div class="rating-stats-column">
+                            <span id="rating-count">
+                                306,837 ratings
+                            </span>
+                            <span id="dot">
+                                ·
+                            </span>
+                            <span id="review-count">
+                                34,811 reviews
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div class="choice-awards-badge">
+                    <div class="choice-awards-flag">
+                        <span>Goodreads Choice Award</span>
+                    </div>
+                    <span>
+                        <a href="">
+                            <u>Nominee for Readers' Favorite Fantasy (2022)</u>
+                        </a>
+                    </span>
+                    
+                </div>
+                <div class="book-description">
+                    <p><b>Legendary storyteller Stephen King goes deep into the well of his imagination in this spellbinding novel about a seventeen-year-old boy who inherits the keys to a parallel world where good and evil are at war, and the stakes could not be higher—for their world or ours.</b></p>
+                    <p>Charlie Reade looks like a regular high school kid, great at baseball and football, a decent student. But he carries a heavy load. His mom was killed in a hit-and-run accident when he was ten, and grief drove his dad to drink. Charlie learned how to take care of himself—and his dad. Then, when Charlie is seventeen, he meets Howard Bowditch, a recluse with a big dog in a big house at the top of a big hill. In the backyard is a locked shed from which strange sounds emerge, as if some creature is trying to escape. When Mr. Bowditch dies, he leaves Charlie the house, a massive amount of gold, a cassette tape telling a story that is impossible to believe, and a responsibility far too massive for a boy to shoulder.</p>
+                    <p>Because within the shed is a portal to another world—one whose denizens are in peril and whose monstrous leaders may destroy their own world, and ours. In this parallel universe, where two moons race across the sky, and the grand towers of a sprawling palace pierce the clouds, there are exiled princesses and princes who suffer horrific punishments; there are dungeons; there are games in which men and women must fight each other to the death for the amusement of the “Fair One.” And there is a magic sundial that can turn back time.</p>
+                    <p>A story as old as myth, and as startling and iconic as the rest of Kings work, Fairy Tale is about an ordinary guy forced into the heros role by circumstance, and it is both spectacularly suspenseful and satisfying.</p>
+                
+                </div>
+                <div class="genres">
+                    <p>Genres</p>
+                    <div class="genre-button">
+                        <a href="#">Horror</a>
+                        <a href="#">Thriller</a>
+                        <a href="#">Adventure</a>
+                        <a href="#">Adult</a>
+                        <a href="#">Science Fiction</a>
+                        <a href="#">Magic</a>
+                        <a href="#">Mystery</a>
+                        <a href="#">Science Fiction Fantasy</a>
+                    </div>
+                </div>
+                <div class="extra-book-details">
+                    <p>607 pages, Hardcover</p>
+                    <p>First published September 6, 2022</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="help-card">
-      <div class="help-card-title">
-        <h4>Can't find what you're looking for?</h4>
-      </div>
-      <div class="help-card-text">
-        <span>Get help and learn more about the design.</span>
-      </div>
-      <div class="help-card-button-container">
-        <a href="" class="help-card-button">Help center</a>
-      </div>
-    </section>
-            
+        <section class="help-card">
+                <div class="help-card-title">
+                    <h4>Can't find what you're looking for?</h4>
+                </div>
+                <div class="help-card-text">
+                    <span>Get help and learn more about the design.</span>
+                </div>
+                <div class="help-card-button-container">
+                    <a href="" class="help-card-button">Help center</a>
+                </div>
+        </section>
+    </main>        
 
     <footer>
       <div class="footer-contents">
