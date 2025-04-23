@@ -235,6 +235,7 @@ ul {
 .author-details {
     font-size: 1.5rem;
     font-weight: 100;
+    padding-bottom: 2px;
 }
 
 .author-details img {
