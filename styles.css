@@ -138,12 +138,15 @@ ul {
     display: flex;
     flex-direction: row;
     margin-bottom: 40px;
+    align-items: flex-start;
 }
 
 
 /* Sidebar */
 
 .sidebar {
+    position: sticky;
+    top: 15px;
     min-width: 300px;
     padding-top: 100px;
     margin: 13px 70px;
@@ -203,10 +206,6 @@ ul {
     background-color: #cec9c9;
 }
 
-/* .bk-cover-rating {
-
-} */
-
 /* Info Content */
 
 .main-content {
@@ -221,7 +220,7 @@ ul {
     display: flex;
     flex-direction: row;
     font-size: 2.3rem;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .book-title h3 {
@@ -235,11 +234,10 @@ ul {
 
 .author-details {
     font-size: 1.5rem;
-    font-weight: 0;
+    font-weight: 100;
 }
 
 .author-details img {
-    font-size: 1.7rem;
     height: 20px;
 }
 
@@ -247,10 +245,22 @@ ul {
     text-decoration: underline;
 }
 
-.ratings-stats-bar {
+.rating {
     padding-top: 10px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rating-num {
+    font-size: 1.7rem;
+    font-family: Libre Baskerville, Georgia, serif;
+}
+
+.rating-stats-column{
+    font-size: .9rem;
+    color: #707070;
 }
 
 .choice-awards-badge {
@@ -261,7 +271,7 @@ ul {
     gap: 8px;
     font-size: .9rem;
     align-items: center;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .choice-awards-flag {
@@ -299,7 +309,6 @@ ul {
 }
 
 .genre-button {
-    gap: 1rem;
     /* outline: 5px solid black; */
     display: flex;
     flex-wrap: wrap;
@@ -337,7 +346,7 @@ ul {
 
 .help-card-title {
     padding-bottom: 12px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Libre Baskerville, Georgia, serif;
 }
 
 .help-card-title h4{
@@ -367,7 +376,7 @@ ul {
 /* Footer */
 footer {
     width: 100%;
-    /* background-color: #3f8363; */
+    background-color: var(--color-bg-footer);
     min-width: 320px;
     padding: 32px 0px;
 }
