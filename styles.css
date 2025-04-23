@@ -248,9 +248,15 @@ ul {
 .rating {
     padding-top: 10px;
     display: flex;
+    width: fit-content;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+}
+
+.rating:hover {
+    background-color: #e4e4e490;
+    border-radius: 10px;
 }
 
 .rating-num {
