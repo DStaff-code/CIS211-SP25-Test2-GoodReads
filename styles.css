@@ -133,6 +133,19 @@ ul {
     font-weight: 520;
 }
 
+.search-bar {
+    display: inline-flex;
+    gap: 15rem;
+    font-size: .9rem;
+    color: #797979;
+    border: solid 1px;
+    border-color: lightgray;
+    background-color: white;
+    align-items: center;
+    padding: 3px;
+    border-radius: 4px;
+}
+
 /* Book Stuff */
 .flex-container {
     display: flex;
@@ -328,15 +341,12 @@ ul {
 }
 
 .genre-button a {
-    text-decoration: underline;
-    text-decoration-color: darkgreen;
+    border-bottom: solid darkgreen 3px;
     text-decoration-thickness: 2px;
 }
 
 .genre-button a:hover {
-    text-decoration: underline;
-    text-decoration-color: var(--color-btn-wtr-hover);
-    text-decoration-thickness: 2px;
+    border-bottom: solid var(--color-btn-wtr-hover) 3px;
 }
 
 .extra-book-details {
